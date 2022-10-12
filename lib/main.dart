@@ -32,10 +32,17 @@ class MyHomePage extends StatelessWidget {
         child: Center(
           child: Column(
             children: [
-              Image(
-                width: 800.0.w,
-                height: 400.0.h,
-                image: AssetImage('assets/head.png'),
+              TextButton(
+                onPressed: () {},
+                style: ButtonStyle(
+                  overlayColor: MaterialStateColor.resolveWith(
+                          (states) => Colors.transparent), //버튼 애니메이션 삭제
+                ),
+                child: Image(
+                  width: 800.0.w,
+                  height: 400.0.h,
+                  image: AssetImage('assets/head.png'),
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
