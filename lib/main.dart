@@ -34,16 +34,21 @@ class MyHomePage extends StatelessWidget {
             children: [
               Image(
                 width: 800.0.w,
-                height: 300.0.h,
+                height: 400.0.h,
                 image: AssetImage('assets/head.png'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Image(
-                    width: 1.0.w,
-                    height: 1.0.h,
-                    image: AssetImage('backgroung.png'),
+                  TextButton(
+                    onPressed: () {
+                      launchURL(huibeom);
+                    },
+                    child: Image(
+                      width: 300.0.w,
+                      height: 300.0.h,
+                      image: AssetImage('assets/leftarm.png'),
+                    ),
                   ),
                   TextButton(
                     onPressed: () {
@@ -54,7 +59,7 @@ class MyHomePage extends StatelessWidget {
                               (states) => Colors.transparent), //버튼 애니메이션 삭제
                     ),
                     child: Image(
-                      width: 500.0.w,
+                      width: 300.0.w,
                       height: 300.0.h,
                       image: AssetImage('assets/rightarm.png'),
                     ),
