@@ -45,7 +45,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 200.0.w,
                 height: 200.0.h,
-                image: AssetImage('head.png'),
+                image: AssetImage('assets/head.png'),
               ),
             ),
           ),
@@ -63,7 +63,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 200.0.w,
                 height: 200.0.h,
-                image: AssetImage('hat.png'),
+                image: AssetImage('assets/hat.png'),
               ),
             ),
           ),
@@ -74,10 +74,14 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {
                 launchURL(huibeom);
               },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
               child: Image(
                 width: 200.0.w,
                 height: 200.0.h,
-                image: AssetImage('leftarm.png'),
+                image: AssetImage('assets/leftarm.png'),
               ),
             ),
           ),
@@ -95,27 +99,10 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 200.0.w,
                 height: 200.0.h,
-                image: AssetImage('rightarm.png'),
+                image: AssetImage('assets/rightarm.png'),
               ),
             ),
           ),
-          /*Positioned(
-            left: 600.0.w,
-            bottom: 250.0.h,
-            child: TextButton(
-              onPressed: () {
-              },
-              style: ButtonStyle(
-                overlayColor: MaterialStateColor.resolveWith(
-                    (states) => Colors.transparent), //버튼 애니메이션 삭제
-              ),
-              child: Image(
-                width: 200.0.w,
-                height: 200.0.h,
-                image: AssetImage('leftleg.png'),
-              ),
-            ),
-          ),*/
         ],
       ),
     );
