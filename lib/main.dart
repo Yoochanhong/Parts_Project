@@ -47,6 +47,7 @@ class MyHomePage extends StatelessWidget {
                   ),
                   TextButton(
                     onPressed: () {
+                      launchURL(sanggu);
                     },
                     style: ButtonStyle(
                       overlayColor: MaterialStateColor.resolveWith(
