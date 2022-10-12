@@ -28,90 +28,95 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Center(
-          child: Stack(
-            clipBehavior: Clip.none,
-            children: [
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    TextButton(
-                      onPressed: () {
-                        launchURL(chanhong);
-                      },
-                      style: ButtonStyle(
-                        overlayColor: MaterialStateColor.resolveWith(
-                            (states) => Colors.transparent), //버튼 애니메이션 삭제
-                      ),
-                      child: Image(
-                        width: 300.0.w,
-                        height: 300.0.h,
-                        image: AssetImage('assets/head.png'),
-                      ),
-                    ),
-                  ],
-                ),
+      body: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Positioned(
+            top: 180.0.h,
+            left: 850.0.w,
+            child: TextButton(
+              onPressed: () {
+                launchURL(chanhong);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
-              Positioned(
-                left: 600.0.w,
-                top: 300.0.h,
-                child: TextButton(
-                  onPressed: () {
-                    launchURL(huibeom);
-                  },
-                  child: Image(
-                    width: 200.0.w,
-                    height: 200.0.h,
-                    image: AssetImage('assets/leftarm.png'),
-                  ),
-                ),
+              child: Image(
+                width: 200.0.w,
+                height: 200.0.h,
+                image: AssetImage('head.png'),
               ),
-              Positioned(
-                right: 600.0.w,
-                top: 300.0.h,
-                child: TextButton(
-                  onPressed: () {
-                    launchURL(sanggu);
-                  },
-                  style: ButtonStyle(
-                    overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
-                  ),
-                  child: Image(
-                    width: 200.0.w,
-                    height: 200.0.h,
-                    image: AssetImage('assets/rightarm.png'),
-                  ),
-                ),
-              ),
-              Positioned(
-                left: 600.0.w,
-                bottom: 250.0.h,
-                child: TextButton(
-                  onPressed: () {
-                    launchURL(gyuha);
-                  },
-                  style: ButtonStyle(
-                    overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
-                  ),
-                  child: Image(
-                    width: 200.0.w,
-                    height: 200.0.h,
-                    image: AssetImage('assets/leftleg.png'),
-                  ),
-                ),
-              ),
-              Image(
-                width: 1.0.w,
-                height: 1.0.h,
-                image: AssetImage('assets/backgroung.png'),
-              ),
-            ],
+            ),
           ),
-        ),
+          Positioned(
+            top: 70.0.h,
+            left: 850.0.w,
+            child: TextButton(
+              onPressed: () {
+                launchURL(gyuha);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 200.0.w,
+                height: 200.0.h,
+                image: AssetImage('hat.png'),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 600.0.w,
+            top: 300.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(huibeom);
+              },
+              child: Image(
+                width: 200.0.w,
+                height: 200.0.h,
+                image: AssetImage('leftarm.png'),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 600.0.w,
+            top: 300.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(sanggu);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 200.0.w,
+                height: 200.0.h,
+                image: AssetImage('rightarm.png'),
+              ),
+            ),
+          ),
+          /*Positioned(
+            left: 600.0.w,
+            bottom: 250.0.h,
+            child: TextButton(
+              onPressed: () {
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 200.0.w,
+                height: 200.0.h,
+                image: AssetImage('leftleg.png'),
+              ),
+            ),
+          ),*/
+        ],
       ),
     );
   }
