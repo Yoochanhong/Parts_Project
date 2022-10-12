@@ -33,9 +33,13 @@ class MyHomePage extends StatelessWidget {
           child: Column(
             children: [
               TextButton(
+<<<<<<< HEAD
                 onPressed: () {
                   launchURL(chanhong);
                 },
+=======
+                onPressed: () {},
+>>>>>>> master
                 style: ButtonStyle(
                   overlayColor: MaterialStateColor.resolveWith(
                           (states) => Colors.transparent), //버튼 애니메이션 삭제
