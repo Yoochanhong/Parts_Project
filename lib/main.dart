@@ -64,7 +64,9 @@ class MyHomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      launchURL(gyuha);
+                    },
                     style: ButtonStyle(
                       overlayColor: MaterialStateColor.resolveWith(
                               (states) => Colors.transparent), //버튼 애니메이션 삭제
