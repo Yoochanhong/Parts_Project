@@ -41,8 +41,8 @@ class MyHomePage extends StatelessWidget {
                           (states) => Colors.transparent), //버튼 애니메이션 삭제
                 ),
                 child: Image(
-                  width: 800.0.w,
-                  height: 400.0.h,
+                  width: 300.0.w,
+                  height: 300.0.h,
                   image: AssetImage('assets/head.png'),
                 ),
               ),
@@ -54,8 +54,8 @@ class MyHomePage extends StatelessWidget {
                       launchURL(huibeom);
                     },
                     child: Image(
-                      width: 300.0.w,
-                      height: 300.0.h,
+                      width: 200.0.w,
+                      height: 200.0.h,
                       image: AssetImage('assets/leftarm.png'),
                     ),
                   ),
@@ -68,36 +68,39 @@ class MyHomePage extends StatelessWidget {
                               (states) => Colors.transparent), //버튼 애니메이션 삭제
                     ),
                     child: Image(
-                      width: 300.0.w,
-                      height: 300.0.h,
+                      width: 200.0.w,
+                      height: 200.0.h,
                       image: AssetImage('assets/rightarm.png'),
                     ),
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  TextButton(
-                    onPressed: () {
-                      launchURL(gyuha);
-                    },
-                    style: ButtonStyle(
-                      overlayColor: MaterialStateColor.resolveWith(
-                              (states) => Colors.transparent), //버튼 애니메이션 삭제
+              Padding(
+                padding: EdgeInsets.only(top: 150.0.h),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TextButton(
+                      onPressed: () {
+                        launchURL(gyuha);
+                      },
+                      style: ButtonStyle(
+                        overlayColor: MaterialStateColor.resolveWith(
+                                (states) => Colors.transparent), //버튼 애니메이션 삭제
+                      ),
+                      child: Image(
+                        width: 200.0.w,
+                        height: 200.0.h,
+                        image: AssetImage('assets/leftleg.png'),
+                      ),
                     ),
-                    child: Image(
-                      width: 500.0.w,
-                      height: 300.0.h,
-                      image: AssetImage('assets/leftleg.png'),
+                    Image(
+                      width: 1.0.w,
+                      height: 1.0.h,
+                      image: AssetImage('assets/backgroung.png'),
                     ),
-                  ),
-                  Image(
-                    width: 1.0.w,
-                    height: 1.0.h,
-                    image: AssetImage('assets/backgroung.png'),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
           ),
