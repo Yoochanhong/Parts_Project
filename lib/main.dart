@@ -48,6 +48,10 @@ class MyHomePage extends StatelessWidget {
                   TextButton(
                     onPressed: () {
                     },
+                    style: ButtonStyle(
+                      overlayColor: MaterialStateColor.resolveWith(
+                              (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    ),
                     child: Image(
                       width: 500.0.w,
                       height: 300.0.h,
@@ -61,6 +65,10 @@ class MyHomePage extends StatelessWidget {
                 children: [
                   TextButton(
                     onPressed: () {},
+                    style: ButtonStyle(
+                      overlayColor: MaterialStateColor.resolveWith(
+                              (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    ),
                     child: Image(
                       width: 500.0.w,
                       height: 300.0.h,
