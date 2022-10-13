@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:parts_project/link.dart';
@@ -27,6 +29,7 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double radians = 295 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -76,7 +79,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
                 width: 200.0.w,
@@ -94,7 +97,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
                 width: 200.0.w,
@@ -118,6 +121,27 @@ class MyHomePage extends StatelessWidget {
                 width: 200.0.w,
                 height: 200.0.h,
                 image: AssetImage('assets/rightarm.png'),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 550.0.w,
+            top: 345.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(haeun);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Transform.rotate(
+                angle: radians,
+                child: Image(
+                  width: 150.0.w,
+                  height: 150.0.h,
+                  image: AssetImage('assets/magicWand.png'),
+                ),
               ),
             ),
           ),
