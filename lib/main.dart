@@ -29,7 +29,8 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double radians = 295 * math.pi / 180;
+    double magicWandRadians = 295 * math.pi / 180;
+    double pinWheelHatRadians = 344 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -53,8 +54,8 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: 70.0.h,
-            left: 850.0.w,
+            top: 90.0.h,
+            left: 835.0.w,
             child: TextButton(
               onPressed: () {
                 launchURL(gyuha);
@@ -63,10 +64,13 @@ class MyHomePage extends StatelessWidget {
                 overlayColor: MaterialStateColor.resolveWith(
                     (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
-              child: Image(
-                width: 200.0.w,
-                height: 200.0.h,
-                image: AssetImage('assets/hat.png'),
+              child: Transform.rotate(
+                angle: pinWheelHatRadians,
+                child: Image(
+                  width: 160.0.w,
+                  height: 160.0.h,
+                  image: AssetImage('assets/pinwheelHat.png'),
+                ),
               ),
             ),
           ),
@@ -136,7 +140,7 @@ class MyHomePage extends StatelessWidget {
                         (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Transform.rotate(
-                angle: radians,
+                angle: magicWandRadians,
                 child: Image(
                   width: 150.0.w,
                   height: 150.0.h,
