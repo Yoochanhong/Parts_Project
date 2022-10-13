@@ -149,6 +149,24 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
+          Positioned(
+            left: 600.0.w,
+            bottom: 180.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(yeonu);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 270.0.w,
+                height: 300.0.h,
+                image: AssetImage('assets/messiLeftLeg.png'),
+              ),
+            ),
+          ),
         ],
       ),
     );
