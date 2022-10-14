@@ -149,6 +149,25 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
+            left: 880.0.w,
+            top: 320.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(junsu);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                fit: BoxFit.cover,
+                width: 130.0.w,
+                height: 130.0.h,
+                image: AssetImage('assets/heart.png'),
+              ),
+            ),
+          ),
+          Positioned(
             left: 650.0.w,
             bottom: 90.0.h,
             child: TextButton(
