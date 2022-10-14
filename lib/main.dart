@@ -74,25 +74,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 650.0.w,
-            bottom: 120.0.h,
-            child: TextButton(
-              onPressed: () {
-                launchURL(yeonu);
-              },
-              style: ButtonStyle(
-                overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
-              ),
-              child: Image(
-                width: 300.0.w,
-                height: 400.0.h,
-                image: AssetImage('assets/messiLeftLeg.png'),
-              ),
-            ),
-          ),
-          Positioned(
-            left: 805.0.w,
+            left: 700.0.w,
             top: 300.0.h,
             child: TextButton(
               onPressed: () {
@@ -103,15 +85,15 @@ class MyHomePage extends StatelessWidget {
                         (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
-                width: 300.0.w,
-                height: 250.0.h,
+                width: 500.0.w,
+                height: 300.0.h,
                 image: AssetImage('assets/body.png'),
               ),
             ),
           ),
           Positioned(
-            left: 599.0.w,
-            top: 300.0.h,
+            left: 570.0.w,
+            top: 290.0.h,
             child: TextButton(
               onPressed: () {
                 launchURL(huibeom);
@@ -128,8 +110,8 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 560.0.w,
-            top: 378.0.h,
+            left: 550.0.w,
+            top: 373.0.h,
             child: TextButton(
               onPressed: () {
                 launchURL(haeun);
@@ -149,8 +131,8 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 600.0.w,
-            top: 300.0.h,
+            right: 570.0.w,
+            top: 290.0.h,
             child: TextButton(
               onPressed: () {
                 launchURL(sanggu);
@@ -163,6 +145,24 @@ class MyHomePage extends StatelessWidget {
                 width: 250.0.w,
                 height: 250.0.h,
                 image: AssetImage('assets/rightarm.png'),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 650.0.w,
+            bottom: 90.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(yeonu);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 300.0.w,
+                height: 400.0.h,
+                image: AssetImage('assets/messiLeftLeg.png'),
               ),
             ),
           ),
