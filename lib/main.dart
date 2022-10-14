@@ -75,24 +75,6 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 850.5.w,
-            top: 400.0.h,
-            child: TextButton(
-              onPressed: () {
-                launchURL(sehyun);
-              },
-              style: ButtonStyle(
-                overlayColor: MaterialStateColor.resolveWith(
-                    (states) => Colors.transparent), //버튼 애니메이션 삭제
-              ),
-              child: Image(
-                width: 200.0.w,
-                height: 200.0.h,
-                image: AssetImage('assets/stomach.png'),
-              ),
-            ),
-          ),
-          Positioned(
             left: 600.0.w,
             top: 300.0.h,
             child: TextButton(
@@ -164,6 +146,24 @@ class MyHomePage extends StatelessWidget {
                 width: 270.0.w,
                 height: 300.0.h,
                 image: AssetImage('assets/messiLeftLeg.png'),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 600.0.w,
+            top: 300.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(sehyun);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 300.0.w,
+                height: 300.0.h,
+                image: AssetImage('assets/body.png'),
               ),
             ),
           ),
