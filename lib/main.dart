@@ -111,7 +111,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 550.0.w,
+            left: 590.0.w,
             top: 373.0.h,
             child: TextButton(
               onPressed: () {
@@ -124,8 +124,8 @@ class MyHomePage extends StatelessWidget {
               child: Transform.rotate(
                 angle: magicWandRadians,
                 child: Image(
-                  width: 180.0.w,
-                  height: 180.0.h,
+                  width: 80.0.w,
+                  height: 160.0.h,
                   image: AssetImage('assets/magicWand.png'),
                 ),
               ),
@@ -150,8 +150,8 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 880.0.w,
-            top: 320.0.h,
+            left: 900.0.w,
+            top: 350.0.h,
             child: TextButton(
               onPressed: () {
                 launchURL(junsu);
@@ -162,14 +162,14 @@ class MyHomePage extends StatelessWidget {
               ),
               child: Image(
                 fit: BoxFit.cover,
-                width: 130.0.w,
-                height: 130.0.h,
+                width: 80.0.w,
+                height: 80.0.h,
                 image: AssetImage('assets/heart.png'),
               ),
             ),
           ),
           Positioned(
-            left: 758.0.w,
+            left: 770.0.w,
             bottom: 90.0.h,
             child: TextButton(
               onPressed: () {
