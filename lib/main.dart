@@ -31,7 +31,7 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     double magicWandRadians = 295 * math.pi / 180;
     double pinWheelHatRadians = 344 * math.pi / 180;
-    double messiLeftLegRadians = 25 * math.pi / 180;
+    double messiLeftLegRadians = 20 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -169,7 +169,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Positioned(
-            left: 650.0.w,
+            left: 758.0.w,
             bottom: 90.0.h,
             child: TextButton(
               onPressed: () {
@@ -182,7 +182,7 @@ class MyHomePage extends StatelessWidget {
               child: Transform.rotate(
                 angle: messiLeftLegRadians,
                 child: Image(
-                  width: 300.0.w,
+                  width: 120.0.w,
                   height: 400.0.h,
                   image: AssetImage('assets/messiLeftLeg.png'),
                 ),
