@@ -6,3 +6,4 @@ final String sehyun = 'https://github.com/repairedserver';
 final String haeun = 'https://github.com/Gwonhaeun0908';
 final String yeonu = 'https://github.com/yeon0821';
 final String junsu = 'https://github.com/JunJaBoy';
+final String jiho = 'https://github.com/jihoseo2006';
