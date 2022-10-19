@@ -32,6 +32,7 @@ class MyHomePage extends StatelessWidget {
     double magicWandRadians = 295 * math.pi / 180;
     double pinWheelHatRadians = 344 * math.pi / 180;
     double messiLeftLegRadians = 20 * math.pi / 180;
+    double shieldRadians = 30 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -83,7 +84,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
                 width: 500.0.w,
@@ -101,7 +102,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
                 width: 250.0.w,
@@ -119,7 +120,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Transform.rotate(
                 angle: magicWandRadians,
@@ -140,12 +141,33 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
                 width: 250.0.w,
                 height: 250.0.h,
                 image: AssetImage('assets/rightarm.png'),
+              ),
+            ),
+          ),
+          Positioned(
+            right: 570.0.w,
+            top: 393.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(jiho);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Transform.rotate(
+                angle: shieldRadians,
+                child: Image(
+                  width: 170.0.w,
+                  height: 200.0.h,
+                  image: AssetImage('assets/shield.png'),
+                ),
               ),
             ),
           ),
@@ -158,7 +180,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Image(
                 fit: BoxFit.cover,
@@ -177,7 +199,7 @@ class MyHomePage extends StatelessWidget {
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
-                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+                    (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Transform.rotate(
                 angle: messiLeftLegRadians,
