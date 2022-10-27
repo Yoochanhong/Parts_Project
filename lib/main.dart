@@ -76,7 +76,7 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ), Positioned(
-            right: 750.0.w,
+            right: 770.0.w,
             bottom: 90.0.h,
             child: TextButton(
               onPressed: () {
@@ -89,7 +89,7 @@ class MyHomePage extends StatelessWidget {
               child: Transform.rotate(
                 angle: rightLegRadians,
                 child: Image(
-                  width: 150.0.w,
+                  width: 110.0.w,
                   height: 400.0.h,
                   image: AssetImage('assets/rightLeg.png'),
                 ),
