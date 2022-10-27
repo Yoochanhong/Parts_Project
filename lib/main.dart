@@ -33,6 +33,7 @@ class MyHomePage extends StatelessWidget {
     double pinWheelHatRadians = 344 * math.pi / 180;
     double messiLeftLegRadians = 20 * math.pi / 180;
     double shieldRadians = 30 * math.pi / 180;
+    double rightLegRadians = 340 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -71,6 +72,26 @@ class MyHomePage extends StatelessWidget {
                   width: 160.0.w,
                   height: 160.0.h,
                   image: AssetImage('assets/pinwheelHat.png'),
+                ),
+              ),
+            ),
+          ), Positioned(
+            right: 750.0.w,
+            bottom: 90.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(geunwoo);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Transform.rotate(
+                angle: rightLegRadians,
+                child: Image(
+                  width: 150.0.w,
+                  height: 400.0.h,
+                  image: AssetImage('assets/rightLeg.png'),
                 ),
               ),
             ),
