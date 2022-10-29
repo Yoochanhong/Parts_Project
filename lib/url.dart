@@ -8,3 +8,4 @@ final String yeonu = 'https://github.com/yeon0821';
 final String junsu = 'https://github.com/JunJaBoy';
 final String jiho = 'https://github.com/jihoseo2006';
 final String geunwoo = 'https://github.com/gilgeunwoo';
+final String seunghoon = 'https://github.com/tmdhoon2';
