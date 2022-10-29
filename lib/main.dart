@@ -228,6 +228,24 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ),
+          Positioned(
+            right: 520.0.w,
+            bottom: 100.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(seunghoon);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 200.0.w,
+                height: 260.0.h,
+                image: AssetImage('assets/android.png'),
+              ),
+            ),
+          ),
         ],
       ),
     );
