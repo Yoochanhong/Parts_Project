@@ -31,9 +31,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     double magicWandRadians = 295 * math.pi / 180;
     double pinWheelHatRadians = 344 * math.pi / 180;
-    double messiLeftLegRadians = 20 * math.pi / 180;
     double shieldRadians = 30 * math.pi / 180;
-    double rightLegRadians = 340 * math.pi / 180;
+    double IronManRightLegRadians = 358 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -76,7 +75,7 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
           ), Positioned(
-            right: 770.0.w,
+            right: 800.0.w,
             bottom: 90.0.h,
             child: TextButton(
               onPressed: () {
@@ -87,12 +86,30 @@ class MyHomePage extends StatelessWidget {
                         (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Transform.rotate(
-                angle: rightLegRadians,
+                angle: IronManRightLegRadians,
                 child: Image(
-                  width: 110.0.w,
-                  height: 400.0.h,
-                  image: AssetImage('assets/rightLeg.png'),
+                  width: 90.0.w,
+                  height: 430.0.h,
+                  image: AssetImage('assets/IronManRightLeg.png'),
                 ),
+              ),
+            ),
+          ),
+          Positioned(
+            left: 810.0.w,
+            bottom: 90.0.h,
+            child: TextButton(
+              onPressed: () {
+                launchURL(yeonu);
+              },
+              style: ButtonStyle(
+                overlayColor: MaterialStateColor.resolveWith(
+                        (states) => Colors.transparent), //버튼 애니메이션 삭제
+              ),
+              child: Image(
+                width: 120.0.w,
+                height: 400.0.h,
+                image: AssetImage('assets/messiLeftLeg.png'),
               ),
             ),
           ),
@@ -208,27 +225,6 @@ class MyHomePage extends StatelessWidget {
                 width: 80.0.w,
                 height: 80.0.h,
                 image: AssetImage('assets/heart.png'),
-              ),
-            ),
-          ),
-          Positioned(
-            left: 770.0.w,
-            bottom: 90.0.h,
-            child: TextButton(
-              onPressed: () {
-                launchURL(yeonu);
-              },
-              style: ButtonStyle(
-                overlayColor: MaterialStateColor.resolveWith(
-                    (states) => Colors.transparent), //버튼 애니메이션 삭제
-              ),
-              child: Transform.rotate(
-                angle: messiLeftLegRadians,
-                child: Image(
-                  width: 120.0.w,
-                  height: 400.0.h,
-                  image: AssetImage('assets/messiLeftLeg.png'),
-                ),
               ),
             ),
           ),
