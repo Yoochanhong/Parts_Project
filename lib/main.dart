@@ -42,7 +42,7 @@ class MyHomePage extends StatelessWidget {
             left: 850.0.w,
             child: TextButton(
               onPressed: () {
-                launchURL(chanhong);
+                launchURL(juwon);
               },
               style: ButtonStyle(
                 overlayColor: MaterialStateColor.resolveWith(
