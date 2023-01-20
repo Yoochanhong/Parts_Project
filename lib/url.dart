@@ -8,5 +8,5 @@ final String junsu = 'https://github.com/JunJaBoy';
 final String jiho = 'https://github.com/jihoseo2006';
 final String geunwoo = 'https://github.com/gilgeunwoo';
 final String seunghoon = 'https://github.com/tmdhoon2';
-final String juwon = 'https://github.com/juwon1207';
+final String juwon = 'https://github.com/Juoneo6';
 final String seungjae = 'https://github.com/HongSJae';
