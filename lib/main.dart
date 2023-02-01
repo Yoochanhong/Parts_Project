@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:parts_project/link.dart';
 import 'package:parts_project/url.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(1920, 1080),
       builder: (context, child) {
-        return MaterialApp(
+        return const MaterialApp(
           debugShowCheckedModeBanner: false,
           home: MyHomePage(),
         );
@@ -32,7 +32,7 @@ class MyHomePage extends StatelessWidget {
     double magicWandRadians = 295 * math.pi / 180;
     double pinWheelHatRadians = 344 * math.pi / 180;
     double shieldRadians = 30 * math.pi / 180;
-    double IronManRightLegRadians = 358 * math.pi / 180;
+    double ironManRightLegRadians = 358 * math.pi / 180;
     return Scaffold(
       body: Stack(
         clipBehavior: Clip.none,
@@ -51,7 +51,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 200.0.w,
                 height: 200.0.h,
-                image: AssetImage('assets/head.png'),
+                image: const AssetImage('assets/head.png'),
               ),
             ),
           ),
@@ -70,7 +70,7 @@ class MyHomePage extends StatelessWidget {
                 child: Image(
                   width: 160.0.w,
                   height: 160.0.h,
-                  image: AssetImage('assets/pinwheelHat.png'),
+                  image: const AssetImage('assets/pinwheelHat.png'),
                 ),
               ),
             ),
@@ -86,11 +86,11 @@ class MyHomePage extends StatelessWidget {
                         (states) => Colors.transparent), //버튼 애니메이션 삭제
               ),
               child: Transform.rotate(
-                angle: IronManRightLegRadians,
+                angle: ironManRightLegRadians,
                 child: Image(
                   width: 90.0.w,
                   height: 430.0.h,
-                  image: AssetImage('assets/IronManRightLeg.png'),
+                  image: const AssetImage('assets/IronManRightLeg.png'),
                 ),
               ),
             ),
@@ -109,7 +109,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 120.0.w,
                 height: 400.0.h,
-                image: AssetImage('assets/messiLeftLeg.png'),
+                image: const AssetImage('assets/messiLeftLeg.png'),
               ),
             ),
           ),
@@ -127,7 +127,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 500.0.w,
                 height: 300.0.h,
-                image: AssetImage('assets/body.png'),
+                image: const AssetImage('assets/body.png'),
               ),
             ),
           ),
@@ -145,7 +145,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 250.0.w,
                 height: 250.0.h,
-                image: AssetImage('assets/leftarm.png'),
+                image: const AssetImage('assets/leftarm.png'),
               ),
             ),
           ),
@@ -165,7 +165,7 @@ class MyHomePage extends StatelessWidget {
                 child: Image(
                   width: 80.0.w,
                   height: 160.0.h,
-                  image: AssetImage('assets/magicWand.png'),
+                  image: const AssetImage('assets/magicWand.png'),
                 ),
               ),
             ),
@@ -184,7 +184,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 250.0.w,
                 height: 250.0.h,
-                image: AssetImage('assets/rightarm.png'),
+                image: const AssetImage('assets/rightarm.png'),
               ),
             ),
           ),
@@ -204,7 +204,7 @@ class MyHomePage extends StatelessWidget {
                 child: Image(
                   width: 170.0.w,
                   height: 200.0.h,
-                  image: AssetImage('assets/shield.png'),
+                  image: const AssetImage('assets/shield.png'),
                 ),
               ),
             ),
@@ -224,7 +224,7 @@ class MyHomePage extends StatelessWidget {
                 fit: BoxFit.cover,
                 width: 80.0.w,
                 height: 80.0.h,
-                image: AssetImage('assets/heart.png'),
+                image: const AssetImage('assets/heart.png'),
               ),
             ),
           ),
@@ -242,7 +242,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 200.0.w,
                 height: 260.0.h,
-                image: AssetImage('assets/android.png'),
+                image: const AssetImage('assets/android.png'),
               ),
             ),
           ),
@@ -260,7 +260,7 @@ class MyHomePage extends StatelessWidget {
               child: Image(
                 width: 200.0.w,
                 height: 200.0.h,
-                image: AssetImage('assets/swift.png'),
+                image: const AssetImage('assets/swift.png'),
               ),
             ),
           ),
